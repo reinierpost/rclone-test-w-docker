@@ -6,8 +6,5 @@ services:
       context: .
       args:
         OS_IMAGE: ${OS_IMAGE:-fedora:34}
-        HOME: ${HOME}
-
-    restart: 'no'
     environment:
       - RCLONE_CONFIG_PASS=${RCLONE_CONFIG_PASS}
