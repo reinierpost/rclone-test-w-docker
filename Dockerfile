@@ -12,8 +12,6 @@ RUN \
     fi; \
   done
 
-ARG HOME
-
 RUN mkdir -p /root/.config/rclone
 COPY rclone.conf /root/.config/rclone/rclone.conf
 CMD rclone listremotes
